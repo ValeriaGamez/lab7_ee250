@@ -64,9 +64,11 @@ while True:
     if sound_val > sound_thresh:
       GPIO.output(chan_list, GPIO.HIGH)
       time.sleep(0.1)
+      GPIO.output(chan_list, GPIO.LOW)
     else:
       GPIO.output(chan_list, GPIO.LOW)
       time.sleep(0.1)
+
 
   
   
